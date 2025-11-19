@@ -9,7 +9,6 @@ const characters = [
 let buttonEl = document.querySelector("#generate-btn");
 let passwordContainerOne = document.querySelector("#password-one")
 let passwordContainerTwo = document.querySelector("#password-two")
-let randomPassword = ""
 
 // PASSWORD GENERATOR METHOD
 buttonEl.addEventListener("click", function(){
@@ -18,7 +17,7 @@ buttonEl.addEventListener("click", function(){
 })
 
 function getRandomPassword(){
-    randomPassword = "";
+    let randomPassword = "";
     for (i = 1; i <= 15; i++) {
         let randomIndex = Math.floor(Math.random() * characters.length);
         let randomChar = characters[randomIndex];
